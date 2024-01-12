@@ -1,0 +1,45 @@
+.hero-container {
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.hero-container--text p {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  caret-color: transparent;
+}
+.hero-container--img {
+  width: 212px;
+  height: 212px;
+  flex-shrink: 0;
+  caret-color: transparent;
+}
+@media (max-width: 500px) {
+  .hero-container--text p {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .hero-container--img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 350px) {
+  .hero-container--img {
+    width: 100px;
+    height: 100px;
+  }
+}
